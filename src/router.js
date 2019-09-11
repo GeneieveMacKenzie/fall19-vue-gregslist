@@ -35,12 +35,18 @@ export default new Router({
     {
       path: '*',
       redirect: '/cars'
-    }
+    },
     {
-      path: '/Houses',
-      name: 'Houses',
+      path: '/houses',
+      name: 'houses',
+      component: Houses
+        
+    },
+    {
+      path: '/houses/:houseId',
+      name: 'house',
       component: function () {
-        return import('./views/Houses.vue')
+        return import(/* webpackChunkName: "car" */ './views/House.vue')
       }
     }
   ]
