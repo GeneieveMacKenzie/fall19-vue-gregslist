@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Cars from './views/Cars.vue'
+import Houses from './views/Houses.vue'
 
 Vue.use(Router)
 
@@ -35,5 +36,13 @@ export default new Router({
       path: '*',
       redirect: '/cars'
     }
+    {
+      path: '/Houses',
+      name: 'Houses',
+      component: function () {
+        return import('./views/Houses.vue')
+      }
+    }
   ]
+
 })
