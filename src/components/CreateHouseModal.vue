@@ -13,7 +13,7 @@
             <div class="form-group">
               <label for="price">Price</label>
               <input
-                type="text"
+                type="number"
                 class="form-control"
                 id="price"
                 placeholder="Enter price"
@@ -24,11 +24,11 @@
             <div class="form-group">
               <label for="year">Year</label>
               <input
-                type="text"
+                type="number"
                 class="form-control"
                 id="year"
                 placeholder="Enter year"
-                v-year="newHouse.year"
+                v-model="newHouse.year"
               />
             </div>
             <div class="form-group">
@@ -74,14 +74,14 @@
                <div class="form-group">
               <label for="levels">Levels</label>
               <input
-                type="text"
+                type="number"
                 class="form-control"
                 id="levels"
                 placeholder="Enter levels"
                 v-model="newHouse.levels"
               />
             </div>
-            <button type="submit" class="btn btn-primary">List Car</button>
+            <button type="submit" class="btn btn-primary">List House</button>
           </form>
         </div>
         <div class="modal-footer">

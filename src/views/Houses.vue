@@ -13,6 +13,7 @@
 
 <script>
 import House from "../components/House";
+import CreateHouseModal from "../components/CreateHouseModal"
 
 export default {
   name: "houses",
@@ -28,7 +29,7 @@ export default {
     this.$store.dispatch("getHouses");
   },
   methods: {},
-  components: { House }
+  components: { House, CreateHouseModal }
 };
 </script>
 

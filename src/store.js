@@ -85,10 +85,10 @@ export default new Vuex.Store({
         console.error(error)
       }
     },
-  async newHouse({ dispatch }, payload) {
+  async addHouse({ dispatch }, payload) {
       try {
-        let res = await api.post('/cars', payload)
-        dispatch('getCars')
+        let res = await api.post('/houses', payload)
+        dispatch('getHouses')
       } catch (error) {
         console.error(error)
 
